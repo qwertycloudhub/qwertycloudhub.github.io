@@ -7,24 +7,26 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  color: #333;
+  background: #121212;
+  color: #e0e0e0;
   line-height: 1.6;
   padding-bottom: 50px;
 }
 
 /* Header */
 header {
-  background: #222;
+  background: #1f1f1f;
   color: #fff;
   padding: 40px 20px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
 header h1 {
   font-size: 3rem;
   margin-bottom: 10px;
+  color: #00e5ff;
+  text-shadow: 0 0 5px #00e5ff50;
 }
 
 header p {
@@ -38,14 +40,14 @@ nav {
 
 nav a {
   margin: 0 15px;
-  color: #f0f0f0;
+  color: #bbbbbb;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #00bcd4;
+  color: #00e5ff;
 }
 
 /* Sections */
@@ -58,15 +60,17 @@ section {
 section h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #222;
-  border-bottom: 2px solid #00bcd4;
+  color: #00e5ff;
+  border-bottom: 2px solid #00e5ff;
   display: inline-block;
   padding-bottom: 5px;
 }
 
-section p, section li {
+section p,
+section li {
   font-size: 1.1rem;
   margin-bottom: 10px;
+  color: #dddddd;
 }
 
 /* Project List */
@@ -76,12 +80,12 @@ ul {
 }
 
 li {
-  background: #fff;
+  background: #1a1a1a;
   margin-bottom: 15px;
   padding: 15px 20px;
-  border-left: 5px solid #00bcd4;
+  border-left: 5px solid #00e5ff;
   border-radius: 5px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 229, 255, 0.1);
 }
 
 /* Footer */
@@ -89,10 +93,10 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  background: #eee;
+  background: #1f1f1f;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  color: #666;
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05);
+  color: #888;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.4);
 }
