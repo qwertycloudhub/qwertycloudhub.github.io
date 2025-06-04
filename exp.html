@@ -43,11 +43,11 @@
  
   <script>
   document.querySelectorAll('.drawer-toggle').forEach(button => {
-    const baseText = button.textContent.replace(/▸|▼/, '').trim();
-
     button.addEventListener('click', () => {
       const parent = button.parentElement;
       const isOpen = parent.classList.toggle('drawer-open');
+
+      const baseText = button.textContent.replace(/▸|▼/, '').trim();
 
       button.textContent = isOpen
         ? `${baseText} ▼`
