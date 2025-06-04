@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #121212;
@@ -84,8 +89,14 @@ li {
   margin-bottom: 15px;
   padding: 15px 20px;
   border-left: 5px solid #00e5ff;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 229, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 229, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 229, 255, 0.12);
 }
 
 /* Footer */
@@ -101,30 +112,64 @@ footer {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.4);
 }
 
+/* Drawer Toggle Button */
 .drawer-toggle {
   background: none;
   border: none;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 600;
   color: #00e5ff;
   cursor: pointer;
-  padding: 10px 0;
-  transition: color 0.3s ease;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  transition: all 0.3s ease;
 }
 
 .drawer-toggle:hover {
-  color: #fff;
+  color: #ffffff;
+  text-shadow: 0 0 5px #00e5ff;
 }
 
+/* Drawer Content */
 .drawer-content {
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.4s ease, padding 0.3s ease;
   margin-left: 20px;
   list-style: disc;
   color: #ccc;
+  padding-left: 0;
 }
 
 .drawer-open .drawer-content {
-  max-height: 500px; /* plenty of space for awards */
+  max-height: 1000px;
+  padding-left: 20px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px 10px;
+    font-size: 0.95rem;
+  }
+
+  .drawer-toggle {
+    font-size: 1rem;
+  }
+
+  li {
+    padding: 12px 15px;
+  }
 }
