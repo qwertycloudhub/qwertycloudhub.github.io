@@ -6,17 +6,6 @@
   <title>My Experience | Vihaan Gaurav</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-   <script>
-    document.querySelectorAll('.drawer-toggle').forEach(button => {
-      button.addEventListener('click', () => {
-        const parent = button.parentElement;
-        parent.classList.toggle('drawer-open');
-        button.textContent = parent.classList.contains('drawer-open')
-          ? '3 years of FLL ▼'
-          : '3 years of FLL ▸';
-      });
-    });
-  </script>
 <body>
   <header>
     <h1>Experience</h1>
@@ -25,21 +14,36 @@
       <a href="projects.html">Projects</a>
     </nav>
   </header>
+
   <section>
-  <h2>My Experience</h2>
-  <ul>
-    <li>
-      <button class="drawer-toggle">FIRST Robotics Competiition</button>
-      <ul class="drawer-content">
-        <li>j</li>
-        <li></li>
-        <li></li>
-      </ul>
-    </li>
-  </ul>
-</section>
+    <h2>My Experience</h2>
+    <ul>
+      <li>
+        <button class="drawer-toggle">FIRST Robotics Competition ▸</button>
+        <ul class="drawer-content">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
   <footer>
     <p>© 2025 Vihaan Gaurav</p>
   </footer>
+
+  <!-- ✅ JavaScript goes at the END of body -->
+  <script>
+    document.querySelectorAll('.drawer-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const parent = button.parentElement;
+        parent.classList.toggle('drawer-open');
+        button.textContent = parent.classList.contains('drawer-open')
+          ? 'FIRST Robotics Competition ▼'
+          : 'FIRST Robotics Competition ▸';
+      });
+    });
+  </script>
 </body>
 </html>
