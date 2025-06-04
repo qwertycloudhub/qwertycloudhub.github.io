@@ -100,3 +100,32 @@ footer {
   color: #888;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.4);
 }
+
+.drawer-toggle {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00e5ff;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.drawer-toggle:hover {
+  color: #fff;
+}
+
+.drawer-content {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  color: #ccc;
+}
+
+.drawer-open .drawer-content {
+  max-height: 500px; /* plenty of space for awards */
+}
