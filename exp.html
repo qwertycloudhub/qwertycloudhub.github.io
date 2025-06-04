@@ -19,7 +19,7 @@
     <h2>My Experience</h2>
     <ul>
       <li>
-        <button class="drawer-toggle">FIRST Robotics Competition (2023-Current)  ▸</button>
+        <button class="drawer-toggle">FIRST Robotics Competition (2023-Current)</button>
         <ul class="drawer-content">
         </ul>
       </li>
@@ -30,15 +30,19 @@
     <p>© 2025 Vihaan Gaurav</p>
   </footer>
   <script>
-    document.querySelectorAll('.drawer-toggle').forEach(button => {
-      button.addEventListener('click', () => {
-        const parent = button.parentElement;
-        parent.classList.toggle('drawer-open');
-        button.textContent = parent.classList.contains('drawer-open')
-          ? 'FIRST Robotics Competition ▼'
-          : 'FIRST Robotics Competition ▸';
-      });
+  document.querySelectorAll('.drawer-toggle').forEach(button => {
+    const baseText = button.textContent.replace(/▸|▼/, '').trim();
+
+    button.addEventListener('click', () => {
+      const parent = button.parentElement;
+      const isOpen = parent.classList.toggle('drawer-open');
+
+      button.textContent = isOpen
+        ? `${baseText} ▼`
+        : `${baseText} ▸`;
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
