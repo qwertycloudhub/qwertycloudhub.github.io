@@ -6,6 +6,17 @@
   <title>My Experience | Vihaan Gaurav</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+   <script>
+    document.querySelectorAll('.drawer-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const parent = button.parentElement;
+        parent.classList.toggle('drawer-open');
+        button.textContent = parent.classList.contains('drawer-open')
+          ? '3 years of FLL ▼'
+          : '3 years of FLL ▸';
+      });
+    });
+  </script>
 <body>
   <header>
     <h1>Experience</h1>
@@ -18,9 +29,9 @@
   <h2>My Experience</h2>
   <ul>
     <li>
-      <button class="drawer-toggle">3 years of FLL ▸</button>
+      <button class="drawer-toggle">FIRST Robotics Competiition</button>
       <ul class="drawer-content">
-        <li></li>
+        <li>j</li>
         <li></li>
         <li></li>
       </ul>
