@@ -117,12 +117,11 @@ footer {
 }
 
 .drawer-content {
-  list-style: disc;
-  margin-left: 20px;
-  margin-top: 5px;
-  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  margin-left: 20px;
+  list-style: disc;
   color: #ccc;
 }
 
