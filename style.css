@@ -13,7 +13,7 @@ html {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #121212;
-  color: #e0e0e0;
+  color: #ffffff;
   line-height: 1.6;
   padding-bottom: 50px;
 }
@@ -47,7 +47,6 @@ nav {
   border: 1px solid #333;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
-
 
 nav a {
   margin: 0 15px;
@@ -87,7 +86,7 @@ section p,
 section li {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #dddddd;
+  color: #ffffff;
 }
 
 /* Project List */
@@ -152,7 +151,7 @@ footer {
   transition: max-height 0.4s ease, padding 0.3s ease;
   margin-left: 20px;
   list-style: disc;
-  color: #ccc;
+  color: #ffffff;
   padding-left: 0;
 }
 
@@ -166,6 +165,7 @@ footer {
 .drawer-content ul {
   margin-left: 20px;
   list-style-type: disc;
+  color: #ffffff;
 }
 
 .drawer-open .drawer-content {
@@ -178,6 +178,16 @@ footer {
   padding-left: 10px;
   background: none;
   box-shadow: none;
+  color: #ffffff;
+}
+
+/* 🔧 Fix: Remove blue border on nested li */
+li li {
+  border-left: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding-left: 10px !important;
+  color: #ffffff !important;
 }
 
 /* Responsive Tweaks */
