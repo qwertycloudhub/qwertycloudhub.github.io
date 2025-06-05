@@ -11,6 +11,17 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+.yetilink {
+  color: #4ecdc4; /* cerulean / cyan */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.yetilink:hover {
+  color: #76e0db; /* lighter on hover */
+  text-decoration: underline;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #181c24; /* dark slate background */
