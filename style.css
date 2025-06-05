@@ -173,6 +173,13 @@ footer {
   padding-left: 20px;
 }
 
+.drawer-content li {
+  border-left: none;
+  padding-left: 10px;
+  background: none;
+  box-shadow: none;
+}
+
 /* Responsive Tweaks */
 @media (max-width: 600px) {
   header h1 {
