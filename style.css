@@ -11,14 +11,15 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-.yetilink {
-  color: #4ecdc4; /* cerulean / cyan */
+.yetilink-fake {
+  color: #4ecdc4;
   font-weight: 600;
+  cursor: pointer;
   text-decoration: none;
 }
 
-.yetilink:hover {
-  color: #76e0db; /* lighter on hover */
+.yetilink-fake:hover {
+  color: #76e0db;
   text-decoration: underline;
 }
 
