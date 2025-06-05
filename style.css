@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #ffffff;
 }
 
 html {
@@ -21,7 +22,7 @@ body {
 /* Header */
 header {
   background: #1f1f1f;
-  color: #fff;
+  color: #ffffff;
   padding: 40px 20px;
   text-align: center;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
@@ -39,6 +40,7 @@ header p {
   opacity: 0.8;
 }
 
+/* Navigation */
 nav {
   margin-top: 15px;
   background-color: #2a2a2a;
@@ -50,7 +52,7 @@ nav {
 
 nav a {
   margin: 0 15px;
-  color: #bbbbbb;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -89,7 +91,7 @@ section li {
   color: #ffffff;
 }
 
-/* Project List */
+/* Lists */
 ul {
   list-style-type: none;
   padding: 0;
@@ -103,6 +105,7 @@ li {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 229, 255, 0.05);
   transition: transform 0.2s ease, box-shadow 0.3s ease;
+  color: #ffffff;
 }
 
 li:hover {
@@ -119,7 +122,7 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  color: #888;
+  color: #ffffff;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -151,8 +154,8 @@ footer {
   transition: max-height 0.4s ease, padding 0.3s ease;
   margin-left: 20px;
   list-style: disc;
-  color: #ffffff;
   padding-left: 0;
+  color: #ffffff;
 }
 
 .drawer-content > li > strong {
