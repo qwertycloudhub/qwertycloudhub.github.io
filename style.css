@@ -156,6 +156,18 @@ footer {
   padding-left: 0;
 }
 
+.drawer-content > li > strong {
+  color: #00e5ff;
+  font-size: 1.05rem;
+  display: block;
+  margin: 12px 0 6px;
+}
+
+.drawer-content ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
 .drawer-open .drawer-content {
   max-height: 1000px;
   padding-left: 20px;
