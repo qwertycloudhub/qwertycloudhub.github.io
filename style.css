@@ -64,7 +64,8 @@ nav a:hover {
 
 nav a.active {
   color: #4db6ac;
-  text-decoration: underline;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* Sections */
