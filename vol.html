@@ -41,11 +41,13 @@
           const parent = button.closest('li');
           const drawer = parent.querySelector('.drawer-content');
 
-          const isOpen = drawer.style.maxHeight && drawer.style.maxHeight !== '0px';
-          drawer.style.maxHeight = isOpen ? '0px' : drawer.scrollHeight + 'px';
+          // Toggle active class for animation
+          drawer.classList.toggle('drawer-open');
 
+          // Toggle arrow
           const baseText = button.textContent.replace(/ ▸| ▼/, '');
-          button.textContent = isOpen ? `${baseText} ▸` : `${baseText} ▼`;
+          const isOpen = drawer.classList.contains('drawer-open');
+          button.textContent = isOpen ? `${baseText} ▼` : `${baseText} ▸`;
         });
       });
     });
