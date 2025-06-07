@@ -16,22 +16,39 @@
       <a href="vol.html" class="active">Volunteering</a>
     </nav>
   </header>
-<section>
+
+  <section>
     <h2>My Volunteering</h2>
     <ul>
       <li>
         <button class="drawer-toggle">Mentor for FIRST Tech Challenge Team #27139 (2024-2025) ▸</button>
         <ul class="drawer-content">
-          <li><strong>Lead Programming Mentor</strong>
-          </li>
+          <li><strong>Lead Programming Mentor</strong></li>
         </ul>
       </li>
-
     </ul>
   </section>
+
   <footer>
     <p>© 2025 Vihaan Gaurav</p>
   </footer>
- 
+
+  <!-- Drawer toggle script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.drawer-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+          const parent = button.closest('li');
+          const drawer = parent.querySelector('.drawer-content');
+
+          const isOpen = drawer.style.maxHeight && drawer.style.maxHeight !== '0px';
+          drawer.style.maxHeight = isOpen ? '0px' : drawer.scrollHeight + 'px';
+
+          const baseText = button.textContent.replace(/ ▸| ▼/, '');
+          button.textContent = isOpen ? `${baseText} ▸` : `${baseText} ▼`;
+        });
+      });
+    });
+  </script>
 </body>
 </html>
