@@ -17,9 +17,37 @@
     </nav>
   </header>
 
+  <section>
+    <h2>My Projects</h2>
+    <ul>
+      <!-- Template for each project -->
+      <li>
+        <button class="drawer-toggle">Project Title ▸</button>
+        <ul class="drawer-content">
+          <li>Project details go here.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
   <footer>
     <p>© 2025 Vihaan Gaurav</p>
   </footer>
- 
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.drawer-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+          const parent = button.closest('li');
+          const drawer = parent.querySelector('.drawer-content');
+          drawer.classList.toggle('drawer-open');
+
+          const baseText = button.textContent.replace(/ ▸| ▼/, '');
+          const isOpen = drawer.classList.contains('drawer-open');
+          button.textContent = isOpen ? `${baseText} ▼` : `${baseText} ▸`;
+        });
+      });
+    });
+  </script>
 </body>
 </html>
