@@ -40,11 +40,12 @@
         button.addEventListener('click', () => {
           const parent = button.closest('li');
           const drawer = parent.querySelector('.drawer-content');
-          drawer.classList.toggle('drawer-open');
+
+          const isOpen = drawer.style.maxHeight && drawer.style.maxHeight !== '0px';
+          drawer.style.maxHeight = isOpen ? '0px' : drawer.scrollHeight + 'px';
 
           const baseText = button.textContent.replace(/ ▸| ▼/, '');
-          const isOpen = drawer.classList.contains('drawer-open');
-          button.textContent = isOpen ? `${baseText} ▼` : `${baseText} ▸`;
+          button.textContent = isOpen ? `${baseText} ▸` : `${baseText} ▼`;
         });
       });
     });
