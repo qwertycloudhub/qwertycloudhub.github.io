@@ -1,3 +1,5 @@
+window.scrollTo(0, 0);
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.drawer-toggle').forEach(button => {
     // Build arrow span if not already present
