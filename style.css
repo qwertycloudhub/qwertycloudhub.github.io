@@ -45,7 +45,9 @@ header {
   background: var(--bg-header);
   padding: 44px 24px 28px;
   text-align: center;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
@@ -287,9 +289,4 @@ footer {
   nav a { font-size: 0.85rem; padding: 6px 14px; }
   section h2 { font-size: 1.25rem; }
   .drawer-toggle { font-size: 0.95rem; padding: 14px 16px; }
-}
-
-header {
-  position: relative;
-  z-index: 100;
 }
