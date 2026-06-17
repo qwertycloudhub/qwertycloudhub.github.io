@@ -288,3 +288,8 @@ footer {
   section h2 { font-size: 1.25rem; }
   .drawer-toggle { font-size: 0.95rem; padding: 14px 16px; }
 }
+
+header {
+  position: relative;
+  z-index: 100;
+}
