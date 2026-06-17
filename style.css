@@ -43,10 +43,9 @@ a:hover { opacity: 0.75; }
 /* ── Header ─────────────────────────────────────────── */
 header {
   background: var(--bg-header);
-  padding: 44px 24px 28px;
+  padding: 28px 24px 20px;
   text-align: center;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 100;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
@@ -76,7 +75,7 @@ header::before {
 
 header h1 {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: #fff;
@@ -89,7 +88,7 @@ header h1 span {
 nav {
   display: inline-flex;
   gap: 4px;
-  margin-top: 22px;
+  margin-top: 16px;
   background: rgba(255,255,255,0.04);
   border: 1px solid var(--border);
   border-radius: 99px;
@@ -284,7 +283,7 @@ footer {
 
 /* ── Responsive ─────────────────────────────────────── */
 @media (max-width: 600px) {
-  header h1 { font-size: 1.8rem; }
+  header h1 { font-size: 1.5rem; }
   nav { flex-wrap: wrap; border-radius: 12px; }
   nav a { font-size: 0.85rem; padding: 6px 14px; }
   section h2 { font-size: 1.25rem; }
