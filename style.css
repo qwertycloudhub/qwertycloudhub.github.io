@@ -275,3 +275,11 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+section {
+  margin: 80px auto;
+}
+
+h2 {
+  margin-bottom: 28px;
+}
