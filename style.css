@@ -283,3 +283,30 @@ section {
 h2 {
   margin-bottom: 28px;
 }
+
+/* ===== BIO / RESEARCH ADDITIONS ===== */
+
+.role-line {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.link-row {
+  margin-top: 18px;
+  display: flex;
+  gap: 20px;
+}
+
+.link-row a {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+}
+
+.drawer-content li.topics {
+  color: var(--cyan) !important;
+  border-left-color: var(--cyan) !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
